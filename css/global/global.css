@@ -1,0 +1,28 @@
+@import url(normalice.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    padding: 1vw;
+    border-radius: 0.5vw;
+}
+
+:root{
+    --fondo: #f2f2f2;
+    --blanco: #ffffff;
+    --negro: #191919;
+}
+

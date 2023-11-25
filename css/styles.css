@@ -1,0 +1,418 @@
+@import url(./global/global.css);
+#texto_fecha{
+    color: white;
+    font-weight: bold;
+}
+.btn{
+   margin: 20px;
+   width: 12vw;
+}
+.btn-success {
+    background-color: #6C63FF;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #d33;
+    color: #ffffff;
+}
+
+.hero nav {
+    position: fixed;
+    width: 90vw;
+    background-color: #191919;
+}
+
+.hero nav .logo-equiti {
+    display: flex;
+    justify-content: center;
+}
+
+.hero nav .logo-equiti img {
+    height: 10vh;
+    width: auto;
+}
+
+
+.hero .contenedor .pagina-principal {
+    padding: 5vw 0 0 0;
+    display: grid;
+    grid-template-areas:
+        "textos imagen"
+        "ola ola";
+    column-gap: 2vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.pagina-principal .ola {
+    grid-area: ola;
+    height: 40vh;
+    overflow: hidden;
+
+
+}
+
+.pagina-principal .ola svg {
+    width: 100%;
+    height: auto;
+}
+
+.pagina-principal img {
+    height: 20vh;
+}
+
+.hero .menu-principal {
+    display: flex;
+    padding: 0 5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .menu-principal .logo-equiti img {
+    height: 10vh;
+}
+
+.hero .menu-principal .enlaces {
+    display: flex;
+    column-gap: 2vw;
+}
+
+.hero .menu-principal .enlaces a {
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.hero .menu-principal .enlaces a:hover {
+    color: #6C63FF;
+}
+
+.pagina-principal .lado-izq {
+    grid-area: textos;
+    padding: 0vw 5vw;
+    margin-top: 10vh;
+}
+
+.pagina-principal .lado-der {
+    grid-area: imagen;
+    padding: 0vw 5vw;
+    margin-top: 10vh;
+}
+
+.pagina-principal .lado-izq .cap {
+    display: grid;
+}
+
+.pagina-principal .lado-izq .cap img {
+    height: 10vh;
+    width: auto;
+}
+
+.pagina-principal .lado-izq .texto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.pagina-principal .lado-izq .texto .titulo p {
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.color-morado {
+    color: #6C63FF;
+}
+
+.mayuscula {
+    font-size: 10vh;
+}
+
+.pagina-principal .lado-izq .texto .subtitulo p {
+    font-size: 3vh;
+}
+
+.pagina-principal .lado-izq .texto .boton button {
+    background-color: #6C63FF;
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+
+.pagina-principal .lado-izq .texto .boton button:hover {
+    background-color: #8781fc;
+}
+
+.pagina-principal .lado-der .img-central {
+    display: grid;
+    place-items: center;
+}
+
+.pagina-principal .lado-der .img-central img {
+    height: 50vh;
+    width: auto;
+}
+/*Seccion Tutorial*/
+.hero .contenedor .tutorial{
+    display: grid;
+    grid-template-areas: 
+    "titulo tutorial"
+    "ola ola";
+    padding: 0 5vw;
+    align-items: center;
+    height: 67vh;
+    justify-content: center;
+    background-color: #6C63FF;
+
+}
+
+.hero .contenedor .tutorial .ola2 {
+    grid-area: ola;
+    height: 40vh; 
+    overflow: hidden;
+    width: 98.9vw;
+
+}
+.hero .contenedor .tutorial .ola2 svg {
+    width: 100%; 
+    height: auto;
+}
+.hero .contenedor .tutorial .cuadros{
+    grid-area: tutorial;
+    display: flex;
+    column-gap: 2vw;
+}
+
+.hero .contenedor .tutorial .cuadros .cuadro{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 20vw;
+    height: 25vh;
+    background-color: #f2f2f2;
+    border-radius: 0.5vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .contenedor .tutorial .cuadros .cuadro .cabecera{
+    font-size: 1.5vw;
+
+}
+
+/*Seccion Aliados*/
+.hero .contenedor .aliados .contenido {
+    display: grid;
+    text-align: center;
+}
+
+.hero .contenedor .aliados .contenido .titulo h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.aliados .contenido .universidades {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+}
+
+.aliados .contenido .universidades .universidad {
+    display: flex;
+    column-gap: 5vw;
+}
+
+.aliados .contenido .universidades .universidad .texto p {
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+
+.aliados .contenido .universidades .contenedor-universidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja {
+    background-color: #191919;
+    border-radius: 1vw;
+    width: 40vw;
+    display: grid;
+    grid-template-areas:
+        "imagen descuento"
+        "imagen boton";
+    height: 40vh;
+    color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .imagen {
+    grid-area: imagen;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .boton {
+    grid-area: boton;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .titulo {
+    grid-area: descuento;
+    font-size: 5vw;
+    border-radius: 50%;
+    padding: 1vw;
+    font-weight: bold;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .boton button {
+    background-color: #6C63FF;
+    color: #ffffff;
+    width: 15vw;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
+    height: 30vh;
+    width: 15vw;
+}
+
+.contenido-derecha-texto p {
+    text-align: center;
+}
+
+.formulario {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container-formulario {
+    grid-area: formulario;
+}
+
+.hero .contenedor .formulario .container-formulario {
+    display: grid;
+    grid-template-areas:
+        "imagen1 titulo imagen3"
+        "imagen2 contenido imagen4";
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vw;
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    padding: 5vw 0;
+}
+
+.titulo-formulario {
+    grid-area: titulo;
+    text-align: center;
+}
+
+.contenido-formulario {
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:
+        "formulario"
+        "botones";
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    overflow: auto;
+    width: 40vw;
+}
+
+.formulario-contenido {
+    grid-area: formulario;
+}
+
+.botones-formulario {
+    grid-area: botones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.titulo__formulario {
+    font-size: 2.2vw;
+    text-align: center;
+}
+
+.contenido-formulario label {
+    padding-left: 15px;
+}
+
+.contenido-formulario input {
+    margin: 10px;
+    width: auto;
+    height: 5vh;
+    width: 35vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+
+.contenido-formulario input:focus {
+    outline: none;
+}
+
+.contenido-formulario select {
+    margin: 15px;
+    width: auto;
+    height: 5vh;
+    width: 36vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+
+.contenido-formulario select:focus {
+    outline: none;
+}
+
+.botones-formulario button {
+    background-color: #6C63FF;
+    color: white;
+    width: 15vw;
+}
+
+.botones-formulario button:hover {
+    background-color: #8781fc;
+}
+
+.hero footer .contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    background-color: #191919;
+    align-items: center;
+    row-gap: 2vh;
+    justify-content: center;
+}
+
+.hero footer .contenedor .redes {
+    display: flex;
+    column-gap: 1vw;
+}
+
+.hero footer .contenedor .redes i {
+    cursor: pointer;
+    font-size: 1.5vw;
+    color: gray;
+}
+
+.hero footer .contenedor .logo .imagen {
+    display: flex;
+}
+
+.hero footer .contenedor .logo .imagen img {
+    height: 10vh;
+}
