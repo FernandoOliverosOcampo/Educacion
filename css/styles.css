@@ -1,12 +1,14 @@
 @import url(./global/global.css);
-#texto_fecha{
-    color: white;
+
+#texto_fecha {
     font-weight: bold;
 }
-.btn{
-   margin: 20px;
-   width: 12vw;
+
+.btn {
+    margin: 20px;
+    width: 12vw;
 }
+
 .btn-success {
     background-color: #6C63FF;
     color: #ffffff;
@@ -33,7 +35,6 @@
     width: auto;
 }
 
-
 .hero .contenedor .pagina-principal {
     padding: 5vw 0 0 0;
     display: grid;
@@ -49,14 +50,8 @@
     grid-area: ola;
     height: 40vh;
     overflow: hidden;
-
-
 }
 
-.pagina-principal .ola svg {
-    width: 100%;
-    height: auto;
-}
 
 .pagina-principal img {
     height: 20vh;
@@ -152,12 +147,20 @@
     height: 50vh;
     width: auto;
 }
+
 /*Seccion Tutorial*/
-.hero .contenedor .tutorial{
+
+.hero .contenedor .tutorial {
     display: grid;
-    grid-template-areas: 
-    "titulo tutorial"
-    "ola ola";
+    grid-template-areas:
+        "contenido"
+        "ola";
+}
+
+.hero .contenedor .tutorial .contenido {
+    display: grid;
+    grid-template-areas:
+        "titulo tutorial";
     padding: 0 5vw;
     align-items: center;
     height: 67vh;
@@ -166,24 +169,18 @@
 
 }
 
-.hero .contenedor .tutorial .ola2 {
+.hero .contenedor .ola2 {
     grid-area: ola;
-    height: 40vh; 
-    overflow: hidden;
-    width: 98.9vw;
+}
 
-}
-.hero .contenedor .tutorial .ola2 svg {
-    width: 100%; 
-    height: auto;
-}
-.hero .contenedor .tutorial .cuadros{
+
+.hero .contenedor .tutorial .cuadros {
     grid-area: tutorial;
     display: flex;
     column-gap: 2vw;
 }
 
-.hero .contenedor .tutorial .cuadros .cuadro{
+.hero .contenedor .tutorial .cuadros .cuadro {
     display: flex;
     flex-direction: column;
     padding: 1vw;
@@ -196,9 +193,52 @@
     text-align: center;
 }
 
-.hero .contenedor .tutorial .cuadros .cuadro .cabecera{
+.hero .contenedor .tutorial .cuadros .cuadro .cabecera {
     font-size: 1.5vw;
 
+}
+/*Seccion información*/
+.hero .contenedor .informacion .contenido{
+    display: grid;
+    grid-template-areas:
+    "izquierda derecha";
+    justify-content: space-around;
+    align-items: center;
+    padding: 0vw 5vw;
+    
+}
+.hero .contenedor .informacion .contenido .lado-izquierdo{
+    grid-area: izquierda;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.hero .contenedor .informacion .contenido .lado-izquierdo .imagen-izquierda{
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+.hero .contenedor .informacion .contenido .lado-derecho{
+    grid-area: derecha;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vw;
+}
+.hero .contenedor .informacion .contenido .lado-derecho .titulo{
+    text-align: center;
+    font-size: 4vh;
+}
+.hero .contenedor .informacion .contenido .lado-derecho .concepto{
+    width: 50vw;
+    
+}
+.hero .contenedor .informacion .contenido .lado-derecho .boton-registro{
+    padding: 3vw 0;
+}
+.hero .contenedor .informacion .contenido .lado-derecho .concepto p{
+    line-height: 2.3em;
 }
 
 /*Seccion Aliados*/
@@ -300,12 +340,11 @@
 .hero .contenedor .formulario .container-formulario {
     display: grid;
     grid-template-areas:
-        "imagen1 titulo imagen3"
-        "imagen2 contenido imagen4";
-    grid-template-columns: 1fr 1fr 1fr;
+        "titulo"
+        "contenido";
+    grid-template-columns: 1fr;
     column-gap: 2vw;
     background-color: rgb(255, 255, 255);
-    width: 90vw;
     padding: 5vw 0;
 }
 
@@ -323,12 +362,13 @@
     justify-content: center;
     align-items: center;
     height: 83vh;
-    overflow: auto;
-    width: 40vw;
+   
 }
 
 .formulario-contenido {
     grid-area: formulario;
+    display: flex;
+    flex-direction: column;
 }
 
 .botones-formulario {
@@ -387,26 +427,76 @@
 .botones-formulario button:hover {
     background-color: #8781fc;
 }
-
+/*FOOTER*/
 .hero footer .contenedor {
     display: flex;
     flex-direction: column;
     padding: 2vw;
-    background-color: #191919;
+    background-color: #f8f5f5;
     align-items: center;
     row-gap: 2vh;
     justify-content: center;
 }
 
 .hero footer .contenedor .redes {
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "redes";
+    
+}
+.hero footer .contenedor .redes .titulo-redes{
+    grid-area: titulo;
+}
+.hero footer .contenedor .redes .titulo-redes p{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 2vw 0;
+}
+.hero footer .contenedor .redes-sociales{
+    grid-area: redes;
     display: flex;
-    column-gap: 1vw;
+    justify-content: space-between;
+    
 }
 
-.hero footer .contenedor .redes i {
+.hero footer .contenedor .redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero footer .contenedor .redes-sociales .fa-instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.hero footer .contenedor .redes-sociales .fa-facebook {
+    background: #3b5998;
+}
+
+.hero footer .contenedor .redes-sociales .fa-twitter {
+    background: #1DA1F2;
+}
+
+.hero footer .contenedor .redes-sociales .fa-tiktok {
+    background: #69C9D0;
+}
+
+.hero footer .contenedor .redes-sociales i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    font-size: 1.5vw;
-    color: gray;
+    font-size: 2vw;
+    border-radius: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .hero footer .contenedor .logo .imagen {
@@ -415,4 +505,205 @@
 
 .hero footer .contenedor .logo .imagen img {
     height: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero .menu-principal {
+        height: 10vh;
+    }
+
+    .hero .menu-principal .logo-equiti img {
+        height: 8vh;
+    }
+
+    .hero .menu-principal .enlaces a {
+        font-size: 2vh;
+    }
+
+    .hero .contenedor .pagina-principal {
+        grid-template-areas:
+            "textos"
+            "imagen"
+            "ola";
+    }
+
+    .pagina-principal .lado-der .img-central img {
+        height: 30vh;
+    }
+
+    .pagina-principal .lado-izq .texto .boton button {
+        padding: 2vh 8vw;
+        font-size: 2.4vh;
+    }
+
+    .pagina-principal .ola {
+        display: grid;
+        height: 10vh;
+    }
+
+    .hero .contenedor .tutorial .contenido {
+        grid-template-areas:
+            "titulo"
+            "tutorial";
+        justify-items: center;
+        height: auto;
+        padding: 5vh 0;
+    }
+
+    .tutorial .contenido .titulo {
+        text-align: center;
+    }
+
+    .tutorial .contenido .titulo h2 {
+        font-size: 5vh;
+    }
+
+    .hero .contenedor .tutorial .cuadros {
+        flex-direction: column;
+        row-gap: 5vw;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro {
+        height: auto;
+        padding: 5vw;
+        width: 60vw;
+        min-height: 30vh;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro .cabecera h3 {
+        font-size: 8vw;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro .cuerpo p {
+        font-size: 2.5vh;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro .footer a {
+        background-color: #6C63FF;
+        padding: 2vh 8vw;
+        font-size: 2.3vh;
+        color: #ffffff;
+    }
+    /*Seccion información*/
+    .hero .contenedor .informacion .contenido{
+    display: grid;
+    grid-template-areas:
+    "izquierda" 
+    "derecha";
+    justify-content: center;
+    align-items: center;
+ 
+    
+    }
+    .hero .contenedor .informacion .contenido .lado-izquierdo{
+        grid-area: izquierda;
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho{
+        grid-area: derecha;
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho .titulo h2{
+        text-align: center;
+        font-size: 5vh;
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho .concepto{
+        width: 80vw;
+        
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho .boton-registro button{
+        padding: 2vh 8vw;
+        font-size: 2.4vh;
+    }
+    /*Seccion Aliados*/
+    .hero .contenedor .aliados .contenido .titulo h1 {
+        font-size: 5vh;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades {
+        flex-direction: column;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja {
+        width: 70vw;
+        height: 60vh;
+        grid-template-areas: 
+        "descuento"
+        "imagen"
+        "boton";
+        padding: 5vw;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja .titulo p{
+        font-size: 5vh;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
+        width: 55vw;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja .boton button {
+        width: 40vw;
+        height: 5vh;
+        font-size: 2.2vh;
+    }
+    .contenido-formulario{
+        justify-content: center;
+        height: auto;
+        padding: 5vw 0;
+    }
+    .titulo-formulario h2{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .titulo-formulario p{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .contenido-formulario label{
+        text-align: left;
+        font-size: 5vw;
+    }
+    .contenido-formulario input{
+        width: 80vw;
+        font-size: 5vw;
+    }
+    .contenido-formulario input:focus{
+        outline: none;
+    }
+    .contenido-formulario select{
+        width: 90vw;
+        font-size: 5vw;
+    }
+    .botones-formulario button{
+        width: 55vw;
+        height: 5vh;
+        font-size: 2.2vh;
+    }
+    .hero footer .contenedor .redes-sociales{
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero footer .contenedor .redes .titulo-redes p{
+        font-size: 6vw;
+        padding: 5vw 0;
+    }
+    .hero footer .contenedor .redes i {
+        padding: 1vw;
+        font-size: 7vw;
+    }
+    #texto_fecha {
+        font-size: 5vw;
+    }
+    .btn {
+     
+        width: 30vw;
+    }
+
+
+
+
+
+
+
+
 }

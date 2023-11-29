@@ -18,6 +18,8 @@ button{
     border: none;
     padding: 1vw;
     border-radius: 0.5vw;
+    background-color:  #6C63FF;
+    color: #ffffff;
 }
 
 :root{
@@ -26,3 +28,7 @@ button{
     --negro: #191919;
 }
 
+.listado{
+    color: black;
+    font-weight: bold;
+}

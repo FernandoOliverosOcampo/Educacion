@@ -1,7 +1,8 @@
 const config = {
     headers: {
-        apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhqenRycGxya3lzc2VzbWt6YWFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTU0ODQzNDEsImV4cCI6MjAxMTA2MDM0MX0.Is_I0GcJEBh799c4Psb_JbFjmyed61zfG8Ls-M5R51I',
-        Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhqenRycGxya3lzc2VzbWt6YWFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTU0ODQzNDEsImV4cCI6MjAxMTA2MDM0MX0.Is_I0GcJEBh799c4Psb_JbFjmyed61zfG8Ls-M5R51I'
+        apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjeGZ0dGJjdGVxYXVzemR5aHJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDEwMTY2MjAsImV4cCI6MjAxNjU5MjYyMH0.3lwk90yqHWEugWnSPeyDhbfi6tfVSzPib7hhEOvQVao'
+        ,
+        Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjeGZ0dGJjdGVxYXVzemR5aHJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDEwMTY2MjAsImV4cCI6MjAxNjU5MjYyMH0.3lwk90yqHWEugWnSPeyDhbfi6tfVSzPib7hhEOvQVao'
       }
 
 };
